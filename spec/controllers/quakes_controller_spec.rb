@@ -24,12 +24,12 @@ describe QuakesController, type: :controller do
 
     context '.json' do
       let(:format){ :json }
-      it{ expect(assigns(:quakes)).to include(quake) }
+      it { expect(assigns(:quakes)).to include(quake) }
     end
 
     context '.rss' do
       let(:format){ :rss }
-      it{ expect(assigns(:quakes)).to include(quake) }
+      it { expect(assigns(:quakes)).to include(quake) }
     end
   end
 end

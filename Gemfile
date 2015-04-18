@@ -13,10 +13,8 @@ gem 'actionpack-page_caching'
 gem 'sass-rails', '~> 5.0.3'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier'
-# gem 'rails-backbone'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'compass-rails'
 gem 'requirejs-rails', github: 'jwhitley/requirejs-rails'
 
 # BOWER ASSETS
