@@ -1,0 +1,22 @@
+shim:
+  crossfilter:
+    exports: crossfilter
+  leaflet_providers:
+    exports: L
+    deps: ["leaflet"]
+  leaflet_bing:
+    exports: L
+    deps: ["leaflet"]
+
+paths:
+  backbone: "backbone"
+  "backbone.wreqr": "backbone.wreqr/amd/backbone.wreqr"
+  "backbone.babysitter": "backbone.babysitter/amd/backbone.babysitter"
+  crossfilter: "crossfilter"
+  d3: "d3"
+  jquery: "jquery"
+  leaflet: "leaflet-dist"
+  leaflet_bing: "Tilelayer.Bing"
+  leaflet_providers: "leaflet-providers"
+  marionette: "marionette/core/amd/backbone.marionette"
+  underscore: "underscore"

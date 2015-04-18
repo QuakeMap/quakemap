@@ -1,0 +1,11 @@
+<li data-ref="<%= quake.external_id %>">
+	<div class="quake-wrapper">
+		<div class='quake-mag'>
+			<%= quake.mag_rounded %>
+		</div>
+		<div class='quake-info'>
+			<p><%= quake.origin_time.getlocal.strftime("%H:%M:%S %a %d %b %Y") %></p>
+			<p>Depth: <%= "#{quake.depth} km" %></p>
+		</div>
+	</div>
+</li>

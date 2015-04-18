@@ -1,0 +1,23 @@
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - bin/*
+    - config/initializers/*
+    - db/migrate/*
+    - db/schema.rb
+
+Blocks:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Exclude:
+    - config/**/*
+    - db/seeds.rb
+    - Rakefile
+    - script/rails
+
+MethodLength:
+  Max: 15

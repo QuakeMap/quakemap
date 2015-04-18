@@ -1,0 +1,5 @@
+json.success    true
+json.total      @quakes.count
+json.mag_floor  @mag_floor
+json.mag_ceil   @mag_ceil
+json.quakes @quakes

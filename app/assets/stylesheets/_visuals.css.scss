@@ -1,0 +1,40 @@
+path.domain{
+  fill: none;
+  stroke: #666;
+}
+g.tick {
+  line{
+    stroke: #666;
+  }
+  text{
+    text-anchor: middle;
+    fill: #666;
+    font-size: 8px;
+  }
+}
+text.label{
+  fill: #666;
+  font-size: 9px;
+  font-weight: bold;
+}
+text.title{
+  text-anchor: middle;
+}
+
+#scale{
+  line.majorline{
+    stroke: rgba(#666, 0.5);
+  }
+  path.scale_graph{
+    stroke-width:1;
+  }
+}
+
+#time_series{
+  .x_axis_label{
+    text-anchor: end;
+  }
+  line.depth_guide{
+    stroke: rgba(#666, 0.35);
+  }
+}

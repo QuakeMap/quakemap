@@ -1,0 +1,55 @@
+<div class="content">
+	<div class="map-container" >
+		<div id="map"></div>
+		<div class="dashboard-panel">
+			<%= link_to image_tag('zoomin.png'), '#', :id=> "zoom_in",  :title=>"Zoom In" %>
+			<%= link_to image_tag('zoomout.png'), '#', :id=> "zoom_out", :title=>"Zoom Out" %>
+			<%= link_to image_tag('latest_icon.png'), '#', :id=>"latest_quake", :title=>"Show Most Recent Result" %>
+			<%= link_to image_tag('strongest_icon.png'),'#', :id=>"strongest_quake", :title=>"Show Strongest Result" %>
+		</div>
+		<div class="filter-panel row">
+			<div id="scale" class="col-xs-3"></div>
+			<div id="time_series" class='col-xs-9'></div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div id="result-list">
+			<div id="view_toggle" style="font-size:8pt;line-height:20px;">
+        <a href="#" id="view_felt" >Felt Quakes</a> |
+        <a href="#" id="view_all">All Quakes</a>
+			</div>
+      <div id="quakes"></div>
+		</div>
+		<div class="advertising">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Quakemap NZ -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:250px;height:250px"
+			     data-ad-client="ca-pub-4883333621023236"
+			     data-ad-slot="6369320835"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	</div>
+</div>
+
+<%= requirejs_include_tag 'application' %>
+
+<script id='quake_item_tmpl' type='text/ejs' >
+	<div class="quake-wrapper">
+	  <div class='quake-mag' style="color:<%%= color() %>">
+	    <%%= formattedMagnitude() %>
+	  </div>
+	  <div class='quake-info'>
+	    <p><%%= formattedTime() %></p>
+	    <p>Depth: <%%= formattedDepth() %> km</p>
+	  </div>
+	  <div class='clearfix'></div>
+	</div>
+</script>
+
+
+<% content_for(:footer) do %>
+	QuakeMap NZ acknowledges the <%= link_to "New Zealand GeoNet", "http://www.geonet.org.nz" %> project and its sponsors <br> <%= link_to "EQC", "http://www.eqc.govt.nz"%>, <%= link_to "GNS Science", "http://www.gns.cri.nz" %> and <%= link_to "LINZ", "http://www.linz.govt.nz" %>, for providing data used in this mashup.
+<% end %>

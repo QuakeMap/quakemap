@@ -1,0 +1,10 @@
+.DS_Store
+.bundle
+.sass-cache/
+tmp/
+db/*.sqlite3
+log/*.log
+public/index.html
+Procfile
+.foreman
+.powrc
