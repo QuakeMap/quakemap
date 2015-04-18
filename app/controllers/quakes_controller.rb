@@ -14,7 +14,7 @@ class QuakesController < ApplicationController
     end
   end
 
-  protected
+  private
 
   def magnitude_ceiling
     Quake.between(origin_time: @start_time..@end_time).max(:magnitude)

@@ -41,7 +41,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.5.0'
   gem 'faker'
   gem 'shoulda-matchers'
-  # gem 'database_cleaner'
+  gem 'database_cleaner'
   # gem 'webmock'
 end
 
@@ -49,14 +49,6 @@ group :development do
   gem 'guard-rubocop'
   gem 'spring-commands-rspec'
 end
-#
-# group :test do
-#
-#
-#   gem 'faker', '~> 1.0.1'
-#   gem 'webmock', '~> 1.8.8'
-#   gem 'database_cleaner', '~> 0.8.0'
-# end
 
 gem 'jpbuilder'
 
