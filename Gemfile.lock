@@ -1,6 +1,7 @@
 GIT
-  remote: git://github.com/jwhitley/requirejs-rails.git
-  revision: dd10bdbbbb5217958cb51b32ec20e0ea75cc330c
+  remote: git://github.com/koenpunt/requirejs-rails.git
+  revision: 65744e37db10c4066b6b0b571e75220da707e1fc
+  tag: sprockets-3
   specs:
     requirejs-rails (0.9.5)
       railties (>= 3.1.1)

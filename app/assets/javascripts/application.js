@@ -1,3 +1,3 @@
-require(["app/index"],function(App){
+require(["app"],function(App){
   App.start();
 });
