@@ -18,5 +18,5 @@ paths:
   leaflet: "leaflet-dist"
   leaflet_bing: "Tilelayer.Bing"
   leaflet_providers: "leaflet-providers"
-  marionette: "marionette/core/amd/backbone.marionette"
+  marionette: "marionette/amd/backbone.marionette"
   underscore: "underscore"

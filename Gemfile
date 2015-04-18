@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'requirejs-rails', github: 'jwhitley/requirejs-rails'
+gem 'jquery-rails'
 
 # BOWER ASSETS
 gem 'rails-assets-d3'
@@ -26,7 +27,7 @@ gem 'rails-assets-modernizr'
 gem 'rails-assets-leaflet-dist'
 gem 'rails-assets-leaflet-providers'
 
-gem 'jquery-rails'
+
 
 gem 'whenever', require: false
 
