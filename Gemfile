@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 source 'https://rails-assets.org'
 
-gem 'rails', '4.1.10'
+gem 'rails', '4.1.12'
 
 gem 'mongoid', '~> 4.0.0.beta1'
 
