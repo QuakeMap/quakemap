@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'requirejs-rails', github:'koenpunt/requirejs-rails', tag: 'sprockets-3'
+gem 'requirejs-rails'
 gem 'jquery-rails'
 
 # BOWER ASSETS
